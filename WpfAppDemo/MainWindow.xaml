@@ -19,12 +19,17 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Label Grid.Column="0">Names</Label>
+        <DockPanel Grid.Column="0" Grid.Row="0" Background="LightGreen"></DockPanel>
+        <DockPanel Grid.Column="0" Grid.Row="1" Background="purple"></DockPanel>
+        <DockPanel Grid.Column="1" Grid.Row="1" Background="LightCoral"></DockPanel>
+        <DockPanel Grid.Column="1" Grid.Row="0" Background="yellow"></DockPanel>
+
+        <Label Grid.Column="0" Background="purple">Names</Label>
         <ListBox Grid.Row="1" x:Name="lstNames" />
 
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
             <TextBox x:Name="txtName" />
-            <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddName_Click">Add Name</Button>
+            <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddName_Click" Background="blue">Add Name</Button>
         </StackPanel>
 
     </Grid>

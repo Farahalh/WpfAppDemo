@@ -29,5 +29,10 @@ namespace WpfAppDemo
                 txtName.Clear();
             }
         }
+
+        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
